@@ -1,0 +1,446 @@
+.resto-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffff;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%);
+  padding: 0.7rem 7%;
+}
+
+.resto-header .home-link {
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #192a56;
+  font-weight: 500;
+}
+
+.resto-header .home-link i {
+  color: #27ae60;
+}
+
+.resto-header .navbar a {
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 17px;
+  color: #666;
+  border-radius: 10px;
+  padding: 0.5rem 1.1rem;
+}
+
+.resto-header .navbar a.active {
+  color: #ffff;
+  background: #27ae60;
+}
+
+/*Some time use line height insted of padding  */
+
+.home-slider {
+  padding: 2.4rem 2rem;
+}
+
+.resto-header .icons i,
+.resto-header .icons a {
+  background: #eee;
+  height: 2.8rem;
+  width: 2.8rem;
+  text-align: center;
+  line-height: 2.8rem;
+  text-decoration: none;
+  line-height: 2.8rem;
+  color: #192a56;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+.slide-value {
+  display: flex !important;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.slide-value span {
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  color: #27ae60;
+}
+
+.slide-value h3 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #192a56;
+}
+
+.slide-value p {
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+/* Common CSS */
+
+.dishes,
+.about-us,
+.menu,
+.review,
+.order-form,.footer {
+  padding: 2rem 2rem;
+}
+
+.dishes h5,
+.about-us h5,
+.menu h5,
+.review h5,
+.order-form h5 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #27ae60;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.dishes h2,
+.about-us h2,
+.menu h2,
+.review h2,
+.order-form h2 {
+  text-align: center;
+  color: #192a56;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+
+/* Dishes section start */
+
+.dishes {
+  background: #eee;
+}
+
+
+.dishes .box-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1.5rem;
+}
+
+.dishes .box-container .box {
+  text-align: center;
+  background: white;
+  border: 0.1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%);
+  border-radius: 0.5rem;
+  padding: 1.2rem 1.5rem;
+}
+
+.dishes .box-container .box .title {
+  font-size: 1.5rem;
+  color: #192a56;
+  margin-bottom: 0px;
+  text-transform: capitalize;
+}
+
+.dishes .box-container .box .dish-img {
+  height: 12rem;
+}
+
+.dishes .box-container .box .stars {
+  padding: 0.5rem 0px;
+}
+
+.dishes .box-container .box .stars .fas {
+  font-size: 1.2rem;
+  color: #27ae60;
+}
+
+.dishes .box-container .box .currency {
+  font-size: 1.5rem;
+  color: #27ae60;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.dishes .box-container .box a.cart-btn {
+  padding: 0.5rem 27px;
+  background: #192a56;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+/* About us section */
+
+.about-us {
+  background: #ffff;
+}
+
+.about-us .row {
+  align-items: center;
+}
+
+.about-us .row .about-img {
+  width: 100%;
+}
+
+.about-us .tt-title {
+  font-size: 1.8rem;
+  color: #192a56;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.about-us p {
+  margin-bottom: 5px;
+  line-height: 1.7rem;
+  color: #666;
+}
+
+.about-us .icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+}
+
+.about-us .icons-container .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  flex: 1 1 7rem;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.about-us .icons-container .icons i.fas {
+  font-size: 1.4rem;
+  color: #27ae60;
+}
+
+.about-us .icons-container .icons span {
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.about-us .learn-btn {
+  text-transform: capitalize;
+  background: #192a56;
+  color: #ffff;
+  padding: 0.7rem 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.about-us .learn-btn:hover {
+  color: #ffff;
+  background: #27ae60;
+  letter-spacing: 0.1rem;
+}
+
+/* Menu section */
+
+.menu,.order-form {
+  background: #eee;
+}
+
+.menu .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu .box-container .box.col-xl-3 {
+  width: 24%;
+}
+
+.menu .box-container .box {
+  background: #ffff;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+
+}
+
+.menu .box-container .box .img-box {
+  height: 14rem;
+}
+
+.menu .box-container .box .img-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+
+.menu .box-container .context .starts {
+  padding: 0.7rem 0px;
+}
+
+.menu .box-container .context .starts .fas {
+  font-size: 19px;
+  color: #27ae60;
+
+}
+
+.menu .box-container .context .ctttt {
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 500;
+  color: #192a56;
+}
+
+.menu .box-container .context .cart-btn {
+  font-size: 17px;
+  padding: 0.7rem 27px;
+  background: #192a56;
+  color: #ffff;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.menu .box-container .context .price {
+  font-size: 20px;
+  color: #27ae60;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+
+/* Review section start */
+
+.review .review-card {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin-right: 10px;
+}
+
+.review .review-card .user-profile {
+  align-items: center;
+  gap: 10px;
+}
+
+.review .review-card .user-profile .profile-pic {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.review .review-card .user-profile .user-info .name {
+  margin-bottom: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.review .review-card .user-profile .user-info .stars {
+  font-size: 14px;
+  color: #27ae60;
+}
+
+.review .review-card .content {
+  margin: 10px 0px;
+  color: #666;
+  line-height: 1.7rem;
+}
+
+.review .slick-track {
+  display: flex;
+  gap: 14px;
+}
+
+/* Review section end */
+
+
+/* Order section start */
+
+.order-form .form-field {
+  margin: 0 auto;
+}
+
+.order-form .form-field .main-form {
+  background: white;
+  padding: 20px;
+  border: 0.2px solid rgba(0,0,0,.2);
+  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+.order-form .form-field .form-label {
+  font-size: 14px;
+  margin-bottom: 0.4rem;
+}
+
+.order-form .form-field .form-control {
+  height: 43px;
+  background: #eee;
+  border: 0px;
+  font-size: 14px;
+  color: #192a56;
+  border-radius: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.order-form .form-field .date-time {
+  display: block;
+  height: 43px;
+  background: #eee;
+  border: 0px;
+  font-size: 15px;
+  color: #192a56;
+  border-radius: 0.3rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+}
+
+.order-form .form-field .btnorder {
+  background: #192a56;
+  padding: 8px 25px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+
+/* Order section end */
+
+/* footer section start */
+
+.footer .box-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 15rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer .box-container a {
+   display: block;
+   text-decoration: none;
+   text-transform: capitalize;
+   color: #666;
+}
+
+.footer .box-container h3 {
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.footer .credit {
+  text-align: center;
+  text-transform: capitalize;
+  border-top: 0.8px solid rgba(0,0,0,.1);
+  padding: 1rem;
+}
+
+/* footer section end */

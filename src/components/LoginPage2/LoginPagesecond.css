@@ -1,0 +1,125 @@
+.login-container {
+     background-image: url(../../assets/images/login_banner.jpg);
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     z-index: 1;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+} 
+
+.login-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.login-container .login-p{
+    background: #9152f8;
+    background: -webkit-linear-gradient(to bottom, #7579ff, #b224ef);
+    background: -o-linear-gradient(to bottom, #7579ff, #b224ef);
+    background: -moz-linear-gradient(to bottom, #7579ff, #b224ef);
+    background: linear-gradient(to bottom, #7579ff, #b224ef);
+    border-radius: 10px;
+    padding: 3rem 3rem;
+
+}
+
+.login-container .login-p .login-text {
+      font-size: 30px;
+      color: white;
+      padding: 30px 30px;
+      text-align: center;
+      text-transform: uppercase;
+}
+
+.login-container .login-p .username {
+    height: 50px;
+    background: transparent;
+    border: transparent;
+    align-items: center;
+    border-bottom: 2px solid rgba(255,255,255,0.24);
+    margin-bottom: 30px;
+}
+
+.login-container .login-p .username .user-icon{
+    background: transparent;
+    border: transparent;
+}
+.login-container .login-p .username .user-icon i{
+    color: #fff;
+    font-size: 17px;
+}
+.login-container .login-p .username .form-control {
+    background: transparent;
+    border: transparent;
+    color: #fff !important;
+    font-size: 18px;
+    padding: 10px 6px;
+
+}
+.login-container .login-p .username .form-control:focus{
+    box-shadow: none;
+}
+.login-container .login-p .username .form-control::placeholder{
+  color: white;
+}
+
+.login-container .login-p .rem-box{
+     margin-left: 13px;
+     margin-bottom: 3rem;
+}
+
+.login-container .login-p .remember-me {
+    color: white;
+    font-size: 14px;
+}
+
+.login-container .login-p .loginbtn-box {
+      display: flex;
+      justify-content: center;
+}
+ 
+.login-container .login-p .loginbtn-box .loginbtn {
+   padding: 0 20px;
+   min-width: 120px;
+   border-radius: 25px;
+   background: #fff;
+   font-size: 17px;
+   font-weight: 500;
+   height: 50px;
+   line-height: 1.2;
+   color: #555555;
+   border: transparent;
+  
+}
+
+.login-container .login-p .forgot-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.login-container .login-p .forgot-box .forgot-pass {
+     color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login-container .login-p .loginbtn:hover{
+    background: -webkit-linear-gradient(bottom, #7579ff, #b224ef);
+    color: #fff;
+    transition: 0.6s;
+    transition-timing-function: linear;
+}
+
