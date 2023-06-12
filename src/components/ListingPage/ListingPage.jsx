@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setEmployeeList } from "../../redux/actions/actions";
 
 
-function ListingPage () {
+function ListingPage (props) {
 
    const dispatch = useDispatch();
    const dataList = useSelector((state)=>state?.listReducer?.employeeList);
@@ -21,12 +21,10 @@ function ListingPage () {
           let getData = await getResponse.json();
           dispatch(setEmployeeList(getData))
        }      
-
-    // using axios 
+     // using axios 
     //  axios.get("https://jsonplaceholder.typicode.com/users").then((response) => {
     //     console.log("response",response?.data);
     // });
-
     }
 
 
