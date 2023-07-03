@@ -10,7 +10,6 @@ function Userref () {
     const reset = () => {
         setName("");
         refElement.current.focus();
-       
     }
 
     const handleInput = () => {

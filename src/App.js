@@ -7,6 +7,7 @@ import store, { persistor } from './store';
 import Userref from './components/Hooks/Userref';
 import Usememo from './components/Hooks/Usememo';
 import Taskforcount from './components/Buttonusestate/Taskforcount';
+import ArshLandingPage from './components/LandingPage1/ArshaLandingPage';
 import RestoLandingpage from './components/LandingPages/RestoLandingpage';
 
 
@@ -18,7 +19,7 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <Router>
           <Routes>
-            <Route path={"/"} element={<RestoLandingpage />}></Route>
+            <Route path={"/"} element={<ArshLandingPage />}></Route>
           </Routes>
         </Router>
       </PersistGate>

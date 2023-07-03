@@ -1,16 +1,29 @@
+/*--------------------------------------------------------------
+ Header section start
+--------------------------------------------------------------*/
 #arsha-header {
     padding: 15px 0px;
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 99;
 }
 
 #arsha-header .logo {
-    font-size: 28px;
+    font-size: 30px;
     text-transform: uppercase;
     margin: 0px;
     padding: 0px;
+    letter-spacing: 2px;
+
 }
 
 #arsha-header .logo .title {
     text-decoration: none;
+    color: #ffff;
 }
 
 #arsha-header .arsha-navbar ul {
@@ -26,8 +39,119 @@
     display: flex;
     align-items: center;
     padding: 10px 0 10px 30px;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     white-space: nowrap;
     transition: 0.3s;
+    color: #ffff;
+}
+
+#arsha-header .arsha-navbar .started {
+    border: 2px solid #47b2e4;
+    border-radius: 50px;
+    padding: 8px 20px;
+    margin-left: 30px;
+}
+
+#arsha-header .arsha-navbar .menu-list {
+     padding: 10px 0 10px 30px;
+}
+
+#arsha-header .arsha-navbar .menu-list .toggle {
+     background: transparent;
+     border: 0px;
+     padding: 0px;
+}
+
+
+/*--------------------------------------------------------------
+ Header section end
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+ Hero section start
+--------------------------------------------------------------*/
+#hero {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #37517e;
+}
+
+#hero .container {
+  padding-top: 72px;
+} 
+
+#hero .container .show-text {
+    font-size: 45px;
+    color: #ffff;
+    line-height: 46px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#hero .container .show-content {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-family: 'Roboto';
+}
+
+#hero .container .hero-img {
+    width: 100%;
+    height: auto;
+}
+
+#hero .container .animated {
+     animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+/*--------------------------------------------------------------
+ Hero section end
+--------------------------------------------------------------*/
+
+.client-logo {
+    background: #f3f5fa;
+    padding: 15px 0px;
+}
+
+.client-logo .logo-img {
+    max-width: 45%;
+    padding: 15px 0px;
+    transition: all 0.4s ease-in-out;
+    filter: grayscale(100)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
 }

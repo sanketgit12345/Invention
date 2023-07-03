@@ -94,7 +94,6 @@ function RestoLandingpage() {
 
       return (
             <React.Fragment>
-
                   {/* Header section start */}
                   <header className="resto-header">
                         <Link to="/home" className="home-link"><i className="fas fa-utensils"></i>resto.</Link>
